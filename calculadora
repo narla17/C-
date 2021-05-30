@@ -1,0 +1,56 @@
+using System;
+using System.Collections.Generic;
+usando System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Oficina_do_C_sharp
+{
+    programa de aula
+    {
+        static void Main (string [] args)
+        {
+        Volta:
+            tentar
+            {
+                Console.Clear ();
+                Console.WriteLine ("Informe o primeiro numero");
+                int numero1 = int.Parse (Console.ReadLine ());
+                Console.WriteLine ("Escolha uma operação abaixo: \ n Adição (+) \ n Subtração (-) \ n Divisão (/) \ n Multiplicação (x)");
+                string operacao = Console.ReadLine ();
+                Console.WriteLine ("Informe o Segundo numero");
+                int numero2 = int.Parse (Console.ReadLine ());
+                resultado interno = 0;
+
+
+
+                switch (operação)
+                {
+                    case "+":
+                        resultado = numero1 + numero2;
+                        pausa;
+                    caso "-":
+                        resultado = numero1 - numero2;
+                        pausa;
+                    caso "/":
+                        resultado = numero1 / numero2;
+                        pausa;
+                    case "x":
+                        resultado = numero1 * numero2;
+                        pausa;
+
+                }
+
+
+                Console.WriteLine ("o resultado é =" + resultado);
+                Console.ReadKey ();
+            }
+            catch (Exceção Erro)
+            {
+                Console.WriteLine ("Houve um erro!" + Erro);
+                Console.ReadKey ();
+            }
+            goto Volta;
+        }
+    }
+}
